@@ -23,7 +23,10 @@ if __name__ == '__main__':
 
     import requests
     from bs4 import BeautifulSoup
+    rurl = ''
+        
     r= requests.get('http://www.baidu.com')
     r.encoding='utf-8'
     bs =BeautifulSoup(r.text,'html.parser') 
     print(bs.find('title'))
+    
