@@ -20,13 +20,13 @@ if __name__ == '__main__':
 #     html =urllib.request.urlopen(url,timeout=500)
 #     bs = BeautifulSoup(html,'html.parser')
 #     print(bs)
-
+    import urllib.request
     import requests
     from bs4 import BeautifulSoup
     rurl = ''
-        
-    r= requests.get('http://www.baidu.com')
-    r.encoding='utf-8'
-    bs =BeautifulSoup(r.text,'html.parser') 
+    html = urllib.request.urlopen('http://share.dmhy.org')
+#     r= requests.get('http://www.share.dmhy.org')
+#     r.encoding='utf-8'
+    bs =BeautifulSoup(html,'html.parser') 
     print(bs.find('title'))
     
