@@ -16,7 +16,7 @@ headers = {
         'Accept-Language': 'zh-CN,zh;q=0.8'
     }          
 def run():
-    rurl ='http://www.qiushibaike.com/8hr/page/7?s=4955443'    
+    rurl ='http://www.qiushibaike.com'    
     bs = tool.openURL_Get(rurl,headers=headers)     
     printTarget(bs)
     for i in range(5):        

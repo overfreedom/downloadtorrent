@@ -2,6 +2,7 @@
 #-*-coding:utf-8-*-
 from pip._vendor.requests.api import request
 from tool import openURL_Post
+import tkinter
 if __name__ == '__main__':
 #     print('in main')
 #     from urllib.request import urlretrieve 
