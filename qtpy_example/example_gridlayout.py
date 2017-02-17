@@ -22,7 +22,7 @@ class Example(QWidget):
         glayout.addWidget(author, 2, 0)
         glayout.addWidget(authorEdit, 2, 1)
         glayout.addWidget(review, 3, 0)
-        glayout.addWidget(reviewTextEdit, 3, 1,5,1)
+        glayout.addWidget(reviewTextEdit, 3, 1,6,3)
 
         self.setLayout(glayout)
 
