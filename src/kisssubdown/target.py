@@ -6,7 +6,11 @@ class Target:
     end = False
     curl = ''
     list = {}
-    first = True    
+    first = True
+    regex =re.compile('')    
+    headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:32.0) Gecko/20100101 Firefox/32.0'
+    }
     def listUrls(self, bs):
 #         for tr in bs.find('tbody',{'id':'data_list','class':'tbody'}).findAll('tr'):
 #             for td in tr.findAll('td'):                                
